@@ -1,0 +1,40 @@
+
+.promo-section{
+    height: 65vh;
+    background-color:#1C1C1C;
+}
+@media all and(max-width:600px){
+    .promo-section{
+        padding:70px 20px 40px 10px;
+        background-color:#1C1C1C;
+        margin-top:70px;
+        height:100vh;
+        margin-bottom:20px;
+    }
+    .promo{
+        padding:10px;
+        display:block;
+        width:100%;
+        text-align: center;
+    }
+    .promo-text{
+        color:white;
+        width:300px;
+        font-size:1em;
+        font-family:'Work Sans';
+        text-transform:uppercase;
+        margin-left:70px;
+        display:block;
+        margin:0 auto;
+      }
+      [class^="icon-"], [class*=" icon-"] {
+        display: inline-block;
+        width: 100%;
+    }
+    div i {
+        text-align:center;
+    }
+    i{
+        margin-bottom:10px;
+    }
+    }

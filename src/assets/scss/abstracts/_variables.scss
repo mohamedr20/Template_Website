@@ -1,0 +1,17 @@
+$breakpoints: (
+    'very_small':(max-width: 480px),
+    'small':(max-width: 736px),
+    'medium': (min-width: 980px),
+    'large': (min-width: 1280px),
+    'huge': (min-width: 1690px),
+  );
+
+$main:#FFFFFF;
+$secondary:#000000;
+$light-grey:#BFBFBF;
+$grey:#5f5f5f;
+$dark-grey:#252525;
+
+$primary-font-color:$main;
+$secondary-font-color:$secondary;
+$nav-link-color:$light-grey;

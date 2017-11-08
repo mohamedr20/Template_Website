@@ -1,0 +1,48 @@
+
+$total-columns:12;
+
+$col-widths:();
+
+
+    @for $i from 1 through $total-columns{
+        @media all and(max-width:1200px){
+            .col-lg-#{$i}{
+                flex-basis:($i/12)*100%;
+            }
+        }
+        @media all and (max-width:600px){
+            .col-sm-#{$i}{
+                flex-basis:($i/12)*100%;
+            }
+        }
+        @media all and (max-width:800px) and (min-width:600px){
+            .col-md-#{$i}{
+                flex-basis:($i/12)*100%;
+            }
+        }
+
+    }
+    .row{
+        box-sizing: border-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        -ms-flex: 0 1 auto;
+        -webkit-box-flex: 0;
+        flex: 0 1 auto;
+        -ms-flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+      }
+
+
+
+.col{
+    flex:0 1 auto;
+    justify-content: center;
+}
+
+

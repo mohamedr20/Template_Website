@@ -1,0 +1,47 @@
+
+.btn {
+    border-radius: 0px;
+    width:200px;
+    display:inline-block;
+    font-weight:500;
+    font-size:1rem;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    margin:0 auto;
+    cursor: pointer;
+  }
+  .btn-dark{
+    padding:30px;
+    background-color:#252525;
+    margin-top:60px;
+    font-family: 'Work Sans';
+    font-size:1.2em;
+    font-weight:300
+  }
+  .btn-alt {
+    padding:30px;
+    background-color:#252525;
+    margin-top:60px;
+  }
+@media only screen and (max-width:600px){
+    .btn-alt{
+        padding:10px;
+        margin-top:15px;
+        font-size:.6rem;
+      }
+}
+@media only screen and (max-width:768px) and (min-width:600px){
+    .btn-alt{
+        padding:15px;
+      }
+}
+
+@media only screen and (max-width:1080px) and (min-width:768px){
+.btn-alt{
+    padding:20px;
+    margin-top:15px;
+  }
+}

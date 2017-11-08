@@ -1,0 +1,33 @@
+.footer-section{
+    height: 25vh;
+    background-color:#EBEBEB;
+  }
+
+@media all and(max-width:600px){
+    .footer-section{
+  margin-top:250px;
+  background-color:#EBEBEB;
+}
+
+.credits{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  width:70%;
+  margin:0 auto;
+  padding-top:70px;
+}
+.credits>i{
+  margin-left:20px;
+  margin-bottom:20px;
+  color:#969696;
+}
+.credits>p{
+  font-size:1.15em;
+  font-weight:200;
+  width:70%;
+  text-align: center;
+  font-family:'Work Sans','serif';
+}
+}
