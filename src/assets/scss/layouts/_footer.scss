@@ -1,6 +1,36 @@
-.footer-section{
-    height: 25vh;
+
+
+  .footer-section{
+    min-height:200px;
     background-color:#EBEBEB;
+  }
+  
+  .credits{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:70%;
+    margin:0 auto;
+    padding-top:70px;
+  }
+  .credits>i{
+    margin-left:20px;
+    margin-bottom:20px;
+    color:#969696;
+  }
+  
+  .copyright{
+    text-align:center;
+    margin:0 auto;
+    font-size:1.35em;
+    font-weight:200;
+    font-family:'Work Sans','serif';
+  }
+  @media only screen and (max-width:600px){
+  .copyright{
+    font-size:1rem;
+  }
   }
 
 @media all and(max-width:600px){

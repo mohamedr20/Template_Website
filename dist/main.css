@@ -7,6 +7,9 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Pinyon+Script");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Pinyon+Script");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -451,7 +454,7 @@ img {
   height: 100vh;
   padding-top: 0;
   min-height: 700px;
-  background-image: url("../assets/img/desktop_background.jpg");
+  background-image: url("../src/assets/img/desktop_background.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -653,6 +656,7 @@ img {
   font-family: 'Playfair Display','serif';
   font-size: 2.9rem;
   font-weight: 600;
+  color: black;
 }
 
 .about-paragraph {
@@ -738,9 +742,83 @@ img {
   }
 }
 
-.promo-section {
-  height: 65vh;
+.about-promo {
+  height: 15vh;
   background-color: #1C1C1C;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+  width: 300px;
+}
+
+.promo-text {
+  color: white;
+  font-size: 1.4em;
+  margin: 0 auto;
+  font-family: 'Work Sans';
+  text-transform: uppercase;
+}
+
+.fa-w {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.about-signature {
+  font-family: 'Pinyon Script';
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-heading {
+    font-size: 1.6rem;
+  }
+  .about-paragraph {
+    font-size: .8rem;
+    line-height: 25px;
+  }
+  .promo-text {
+    font-size: .8rem;
+  }
+  .about-signature {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+  .about-signature {
+    font-size: 1.7rem;
+  }
+  .about-paragraph {
+    font-size: .9rem;
+  }
+  .promo-text {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 768px) {
+  .about-heading {
+    font-size: 2.4rem;
+  }
+  .about-signature {
+    font-size: 2rem;
+  }
+  .about-paragraph {
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+  .promo-text {
+    font-size: 1rem;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -780,12 +858,112 @@ img {
 }
 
 .contact-section {
-  height: 100vh;
+  height: 75vh;
+  min-height: 800px;
+}
+
+.contact-div {
+  padding-left: 5%;
+  padding-top: 10%;
+  height: 100%;
+}
+
+.contact-heading {
+  text-align: left;
+  font-family: 'Playfair Display';
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.contact-text {
+  font-family: 'Work Sans','serif';
+  line-height: 1.7;
+  font-size: 1.3em;
+  letter-spacing: .8px;
+  margin-bottom: 3%;
+  width: 80%;
+}
+
+.contact-info {
+  font-family: 'Work Sans','serif';
+  line-height: 1.65;
+  font-size: 1.2em;
+}
+
+.contact-info > li {
+  color: #645F5F;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.contact-form {
+  margin-top: 12%;
+  margin-bottom: 18%;
+  width: 100%;
+}
+
+.form-control {
+  padding: 16px 22px 16px 22px;
+  border-radius: 0;
+  font-size: 1em;
+  background-color: #fff;
+  border: none;
+  width: 75%;
+  font-family: 'Work Sans','serif';
+  letter-spacing: 2px;
+  color: #5f5f5f;
+}
+
+.contact-heading {
+  margin-top: 15px;
+  text-align: left;
+  font-size: 2.5em;
+  font-family: 'Playfair Display';
+  font-weight: 700;
+  color: black;
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 768px) {
+  .contact-div {
+    margin-bottom: 22%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-text {
+    font-size: .8rem;
+  }
+  .contact-heading {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .contact-info {
+    font-size: .8rem;
+  }
+  .form-control {
+    padding: 4% 4% 4% 4%;
+    width: 100%;
+  }
+  .btn-dark {
+    padding: 10px;
+    margin-top: 0;
+    font-size: .6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .btn-dark {
+    padding: 15px;
+    font-size: 1rem;
+  }
 }
 
 @media all and (max-width: 600px) {
   .contact-section {
     color: black;
+    border: 1px solid red;
   }
   .contact-div {
     padding-top: 10px;
@@ -836,8 +1014,38 @@ img {
 }
 
 .footer-section {
-  height: 25vh;
+  min-height: 200px;
   background-color: #EBEBEB;
+}
+
+.credits {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.credits > i {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #969696;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.35em;
+  font-weight: 200;
+  font-family: 'Work Sans','serif';
+}
+
+@media only screen and (max-width: 600px) {
+  .copyright {
+    font-size: 1rem;
+  }
 }
 
 @media all and (max-width: 600px) {
